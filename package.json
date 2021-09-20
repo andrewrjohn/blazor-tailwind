@@ -1,0 +1,17 @@
+{
+  "name": "BlazorTailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watchcss": "yarn buildcss --watch",
+    "buildcss": "tailwindcss -i  wwwroot/css/app.css -o wwwroot/css/app.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "tailwindcss": "^2.2.15"
+  }
+}

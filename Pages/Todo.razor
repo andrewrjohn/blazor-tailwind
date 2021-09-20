@@ -1,0 +1,51 @@
+@page "/todo"
+@using BlazorTailwind.Data
+
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Todo</h3>
+
+
+<input @bind="NewTodo" placeholder="Todo name" class="border rounded-lg px-3 py-1"/>
+
+<button @onclick="Save" class="bg-gray-900 text-white px-3 py-1">Add</button>
+
+@if (Error != string.Empty)
+{
+    <p class="text-red-400 mt-2">@Error</p>
+}
+
+<ul class="mt-4">
+    @foreach (var item in Todos)
+    {
+        <li>@item.Todo</li>
+    }
+</ul>
+
+
+@code {
+
+    private List<TodoItem> Todos = new();
+
+    private string NewTodo = string.Empty;
+
+    private DateTime? DueDate = null;
+
+    private string Error = string.Empty;
+
+    private void Save()
+    {
+        if (string.IsNullOrEmpty(NewTodo))
+        {
+            Error = "Please enter a todo.";
+            return;
+        }
+
+        Todos.Add(new TodoItem
+        {
+            Todo = NewTodo
+        });
+
+        NewTodo = string.Empty;
+        Error = string.Empty;
+    }
+
+}
