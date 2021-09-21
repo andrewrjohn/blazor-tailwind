@@ -4,6 +4,29 @@
 
 A match made in heaven, maybe. BUnit included.
 
+<br>
+<br>
+<br>
+
+## Getting Started
+
+The easiest way to start using this is to install the dotnet template:
+
+```bash
+dotnet new -i Blazor.TailwindCSS.BUnit
+```
+
+Then you can bootstrap a new app using the installed template:
+
+```bash
+dotnet new blazortailwind -o MyApp
+```
+
+There you have it! You now have a brand-new Blazor server app that's using TailwindCSS and BUnit 🎉
+<br>
+<br>
+<br>
+
 ## Run Locally
 
 Clone the project:
@@ -44,6 +67,10 @@ Start the server:
 ```
 
 View app at https://localhost:5001 🎉
+
+<br>
+<br>
+<br>
 
 ## Running Tests
 
