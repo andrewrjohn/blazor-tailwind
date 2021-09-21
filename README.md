@@ -18,7 +18,7 @@ dotnet new -i Blazor.TailwindCSS.BUnit
 Then you can bootstrap a new app using the installed template:
 
 ```bash
-dotnet new blazortailwind -o my-app -n MyApp
+dotnet new blazortailwind -o my-app --name MyApp
 ```
 
 There you have it! You now have a brand-new Blazor server app that's using TailwindCSS and BUnit 🎉
