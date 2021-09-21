@@ -59,7 +59,7 @@ or to run from the test project directory:
   dotnet test
 ```
 
-_Included are two test examples: `CounterTest.razor` and `CounterTest.cs`. Both accomplish the same thing, but do it in a slightly different manner. Read more about differences trade-offs [here](https://bunit.dev/docs/getting-started/writing-tests.html#write-tests-in-cs-or-razor-files)._
+_Included are two test examples: `CounterTest.razor` and `CounterTest.cs`. Both accomplish the same thing, but do it in a slightly different manner. Read more about the differences [here](https://bunit.dev/docs/getting-started/writing-tests.html#write-tests-in-cs-or-razor-files)._
 
 ## Documentation
 
