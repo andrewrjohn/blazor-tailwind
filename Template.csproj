@@ -2,12 +2,14 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0</PackageVersion>
+        <PackageVersion>1.0.1</PackageVersion>
         <PackageId>Blazor.TailwindCSS.BUnit</PackageId>
         <Title>Blazor Server App + TailwindCSS + BUnit</Title>
         <Authors>Andrew Johnson</Authors>
         <Description>Template for creating a Blazor server app with TailwindCSS and BUnit</Description>
+        <Summary>Template for creating a Blazor server app with TailwindCSS and BUnit</Summary>
         <PackageTags>dotnet-new;templates;blazor;tailwindcss;bunit</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
