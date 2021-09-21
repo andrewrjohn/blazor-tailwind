@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Andrew Johnson",
+  "classifications": [ "Web", "Blazor"],
+  "identity": "Blazor.TailwindCSS.BUnit",
+  "name": "Blazor Server App + TailwindCSS + BUnit",
+  "shortName": "blazortailwind",
+  "sourceName": "BlazorTailwind",
+  "preferNameDirectory": true
+}

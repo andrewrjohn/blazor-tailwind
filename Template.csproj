@@ -7,7 +7,7 @@
         <Title>Blazor Server App + TailwindCSS + BUnit</Title>
         <Authors>Andrew Johnson</Authors>
         <Description>Template for creating a Blazor server app with TailwindCSS and BUnit</Description>
-        <PackageTags>dotnet-new;templates;auth0</PackageTags>
+        <PackageTags>dotnet-new;templates;blazor;tailwindcss;bunit</PackageTags>
 
         <TargetFramework>netcoreapp3.1</TargetFramework>
 
