@@ -41,7 +41,7 @@ Start the server:
   # /blazor-tailwind/BlazorTailwind
   dotnet watch run
 ```
-View app at https://localhost:5001
+View app at https://localhost:5001 🎉
 
 
 ## Running Tests
