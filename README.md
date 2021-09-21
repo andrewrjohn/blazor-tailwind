@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/Blazor.TailwindCSS.BUnit?style=flat-square) ![Nuget](https://img.shields.io/nuget/dt/Blazor.TailwindCSS.BUnit?style=flat-square)
 
 # Blazor + Tailwind
 
@@ -35,14 +36,14 @@ Start the server:
 ```bash
   # /blazor-tailwind
   dotnet watch run --project BlazorTailwind
-  
+
   or
 
   # /blazor-tailwind/BlazorTailwind
   dotnet watch run
 ```
-View app at https://localhost:5001 🎉
 
+View app at https://localhost:5001 🎉
 
 ## Running Tests
 
@@ -51,7 +52,9 @@ To run tests, run the following command from the solution root directory:
 ```bash
   dotnet test BlazorTailwind.Tests
 ```
+
 or to run from the test project directory:
+
 ```bash
   cd BlazorTailwind.Tests
   dotnet test
