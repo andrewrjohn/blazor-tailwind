@@ -3,9 +3,6 @@
 # Blazor + Tailwind
 
 A match made in heaven, maybe. BUnit included.
-<br>
-<br>
-<br>
 
 ## Getting Started
 
@@ -22,9 +19,6 @@ dotnet new blazortailwind -o my-app --name MyApp
 ```
 
 There you have it! You now have a brand-new Blazor server app that's using TailwindCSS and BUnit 🎉
-<br>
-<br>
-<br>
 
 ## Running the App
 
@@ -49,9 +43,6 @@ Start the server:
 ```
 
 View app at https://localhost:5001 🎉
-<br>
-<br>
-<br>
 
 ## Running Tests
 
