@@ -18,7 +18,7 @@ dotnet new -i Blazor.TailwindCSS.BUnit
 Then you can bootstrap a new app using the installed template:
 
 ```bash
-dotnet new blazortailwind -o MyApp
+dotnet new blazortailwind -o my-app -n MyApp
 ```
 
 There you have it! You now have a brand-new Blazor server app that's using TailwindCSS and BUnit 🎉
@@ -26,43 +26,26 @@ There you have it! You now have a brand-new Blazor server app that's using Tailw
 <br>
 <br>
 
-## Run Locally
-
-Clone the project:
-
-```bash
-  # HTTPS
-  git clone https://github.com/andrewrjohn/blazor-tailwind.git
-
-  or
-
-  # SSH
-  git clone git@github.com:andrewrjohn/blazor-tailwind.git
-```
+## Running the App
 
 Go to the project directory:
 
 ```bash
-  cd blazor-tailwind
+  cd my-app
 ```
 
 Install dependencies:
 
 ```bash
   dotnet restore
-  cd BlazorTailwind && yarn install
+  cd MyApp
+  yarn # or you can use 'npm install'
 ```
 
 Start the server:
 
 ```bash
-  # /blazor-tailwind
-  dotnet watch run --project BlazorTailwind
-
-  or
-
-  # /blazor-tailwind/BlazorTailwind
-  dotnet watch run
+  dotnet watch run --project MyApp
 ```
 
 View app at https://localhost:5001 🎉
@@ -75,12 +58,12 @@ View app at https://localhost:5001 🎉
 To run tests, run the following command from the solution root directory:
 
 ```bash
-  dotnet test BlazorTailwind.Tests
+  dotnet test MyApp.Tests
 ```
 
 or to run from the test project directory:
 
 ```bash
-  cd BlazorTailwind.Tests
+  cd MyApp.Tests
   dotnet test
 ```

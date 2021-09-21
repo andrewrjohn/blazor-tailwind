@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
         <PackageId>Blazor.TailwindCSS.BUnit</PackageId>
         <Title>Blazor Server App + TailwindCSS + BUnit</Title>
         <Authors>Andrew Johnson</Authors>
@@ -20,7 +20,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;node_modules" />
+        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\node_modules\**" />
         <Compile Remove="**\*" />
     </ItemGroup>
 
