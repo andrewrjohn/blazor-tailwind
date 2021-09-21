@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0</PackageVersion>
+        <PackageId>Blazor.TailwindCSS.BUnit</PackageId>
+        <Title>Blazor Server App + TailwindCSS + BUnit</Title>
+        <Authors>Andrew Johnson</Authors>
+        <Description>Template for creating a Blazor server app with TailwindCSS and BUnit</Description>
+        <PackageTags>dotnet-new;templates;auth0</PackageTags>
+
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;node_modules" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+
+</Project>
