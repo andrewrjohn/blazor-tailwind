@@ -1,0 +1,25 @@
+@using BlazorTailwind.Pages
+@inherits TestContext
+@code
+{
+    [Fact]
+    public void CounterComponent_ExpectRendersCorrectly()
+    {
+        // Act
+        var cut = Render(@<Counter />);
+
+        // Assert
+        cut.Find("p").TextContent.MarkupMatches("Current count: 0");
+    }
+    
+    [Fact]
+    public void CounterComponent_StartingValueParamPassed_ExpectCorrectStartingValue()
+    {
+        // Act
+        var startingValue = 5;
+        var cut = Render(@<Counter StartingValue="@startingValue" />);
+
+        // Assert
+        cut.Find("p").TextContent.MarkupMatches($"Current count: {startingValue}");
+    }
+}
