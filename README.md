@@ -1,7 +1,7 @@
 
 # Blazor + Tailwind
 
-A match made in heaven (maybe). BUnit included.
+A match made in heaven, maybe. BUnit included.
 
 ## Run Locally
 
