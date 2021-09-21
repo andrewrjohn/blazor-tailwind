@@ -3,7 +3,6 @@
 # Blazor + Tailwind
 
 A match made in heaven, maybe. BUnit included.
-
 <br>
 <br>
 <br>
@@ -67,7 +66,6 @@ Start the server:
 ```
 
 View app at https://localhost:5001 🎉
-
 <br>
 <br>
 <br>
