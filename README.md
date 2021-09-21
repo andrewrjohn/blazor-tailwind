@@ -58,3 +58,9 @@ or to run from the test project directory:
   cd MyApp.Tests
   dotnet test
 ```
+
+## Documentation
+
+- [Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [BUnit](https://bunit.dev/)
