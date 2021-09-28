@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "watchcss": "yarn buildcss --watch",
-    "buildcss": "tailwindcss -i  wwwroot/css/app.css -o wwwroot/css/app.min.css"
+    "build:dev": "TAILWIND_MODE=watch tailwindcss -i  wwwroot/css/app.css -o wwwroot/css/app.min.css",
+    "build:prod": "NODE_ENV=production tailwindcss -i  wwwroot/css/app.css -o wwwroot/css/app.min.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.3.3",

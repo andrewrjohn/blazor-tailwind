@@ -1,15 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-    <Target Name="PreBuild" AfterTargets="PreBuildEvent">
-        <Exec Command="npm run buildcss" />
-    </Target>
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
-
-
+    
+    <Target Name="YarnInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
+        <Exec Command="yarn" />
+        <Touch Files="node_modules/.install-stamp" AlwaysCreate="true" />
+    </Target>
+    <Target Name="YarnRunBuildCss" DependsOnTargets="YarnInstall" BeforeTargets="BeforeBuild">
+        <Exec Command="yarn build:dev" Condition=" '$(Configuration)' != 'Release' " />
+        <Exec Command="yarn build:prod" Condition=" '$(Configuration)' == 'Release' " />
+    </Target>
+    
     <ItemGroup>
-        <Folder Include="wwwroot\css" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
     </ItemGroup>
-
 </Project>
