@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.2</PackageVersion>
+        <PackageVersion>1.0.3</PackageVersion>
         <PackageId>Blazor.TailwindCSS.BUnit</PackageId>
         <Title>Blazor Server App + TailwindCSS + BUnit</Title>
         <Authors>Andrew Johnson</Authors>
